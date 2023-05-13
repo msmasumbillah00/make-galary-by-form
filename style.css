@@ -1,0 +1,74 @@
+.user-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: aqua;
+    display: flex;
+}
+
+
+.video-inner {
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+#display-videos {
+    position: relative;
+}
+
+#popup-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 160px;
+}
+
+#display-video-inner {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1; */
+}
+
+#popup-container {
+    position: fixed;
+    top: 10%;
+    left: 10px;
+    height: 100px;
+    width: 400px;
+    background-color: yellow;
+    z-index: 10;
+    display: none;
+}
+
+#popup-container video {
+    width: 100%;
+}
+
+#popup-container i {
+    font-size: 45px;
+    color: antiquewhite;
+}
+
+#videos .video-inner video:hover {
+    filter: brightness(0.8);
+    transition: filter 0.3s ease-in-out;
+}
+
+
+
+.form-section .container {
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 667px) {
+
+    /* your CSS styles for mobile devices go here */
+    #display-video-inner {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10px;
+        z-index: 1;
+    }
+}
